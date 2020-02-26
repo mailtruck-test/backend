@@ -1,0 +1,6 @@
+- id: "registration.created.success"
+  translation: "Registration was successfully created."
+- id: "registration.updated.success"
+  translation: "Registration was successfully updated."
+- id: "registration.destroyed.success"
+  translation: "Registration was successfully destroyed."

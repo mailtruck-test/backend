@@ -1,0 +1,42 @@
+<div class="page-header">
+  <h1>Registration#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li class="list-inline-item">
+    <%= linkTo(registrationsPath(), {class: "btn btn-info"}) { %>
+      Back to all Registrations
+    <% } %>
+  </li>
+  <li class="list-inline-item">
+    <%= linkTo(editRegistrationPath({ registration_id: registration.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+  </li>
+  <li class="list-inline-item">
+    <%= linkTo(registrationPath({ registration_id: registration.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+  </li>
+</ul>
+
+<p>
+  <strong>First</strong>: <%= registration.First %>
+</p>
+<p>
+  <strong>Last</strong>: <%= registration.Last %>
+</p>
+<p>
+  <strong>Address</strong>: <%= registration.Address %>
+</p>
+<p>
+  <strong>Address2</strong>: <%= registration.Address2 %>
+</p>
+<p>
+  <strong>City</strong>: <%= registration.City %>
+</p>
+<p>
+  <strong>State</strong>: <%= registration.State %>
+</p>
+<p>
+  <strong>Zip</strong>: <%= registration.Zip %>
+</p>
+<p>
+  <strong>Country</strong>: <%= registration.Country %>
+</p>

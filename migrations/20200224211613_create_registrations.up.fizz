@@ -1,0 +1,12 @@
+create_table("registrations") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("first", "string", {})
+	t.Column("last", "string", {})
+	t.Column("address", "string", {})
+	t.Column("address2", "string", {null: true})
+	t.Column("city", "string", {})
+	t.Column("state", "string", {})
+	t.Column("zip", "string", {})
+	t.Column("country", "string", {})
+	t.Timestamps()
+}
